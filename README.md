@@ -12,7 +12,7 @@ The code computes the time- and scale-resolved wavelet coherence across trials o
 
 
 ## Getting started
-1. Download the .zip and unzip or clone the repo to your favourite path.
+1. Download the .zip and unzip or clone to your favourite path.
 2. Make sure you Matlab path is set to include the code (Set path on the Home tab).
 3. Walk throught the example script. It demonstrates how to set up the config and call the computeCPCOH function.
 4. Try it on your own data (NOTE: your data will have to organised as a FieldTrip data struct).
