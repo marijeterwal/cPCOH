@@ -14,14 +14,14 @@
 
 %% Clear workspace
 
-% clear all
+clear all
 close all
 clc
 
 %% Set data path and load example data
 
 path_in         =  'cPCOH\';
-subject         = 'ExampleData6';
+subject         = 'ExampleData';
 path_data       = [path_in, subject, '.mat'];
 
 % Load data_Test
@@ -94,7 +94,7 @@ title('Consensus')
 
 subplot(133); hold on;
 imagesc(cfg.toi, cfg.foi, squeeze(dataPCoh.PCohZc(1,:,:,:))); 
-contour(cfg.toi, cfg.foi, abs(squeeze(dataPCoh.CohZ(1,1,:,:))), 1.9, 'LineColor', [1,1,1], 'lineWidth', 2);
+contour(cfg.toi, cfg.foi, abs(squeeze(dataPCoh.CohZ(1,1,:,:))), 1.96, 'LineColor', [1,1,1], 'lineWidth', 2);
 axis xy
 colorbar; caxis([-3,3]);
 xlabel('Time (s)')
